@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Tienda</title>
+</head>
+<body>
+<font face="ALGERIAN" color="blue">
+	<h1 align="center">TIENDA DE COMPONENTES ELECTRONICOS </h1>
+</font>
+
+<font face="Arial black" color="black">
+	<center><p>Empresa Importadora y comercializadora de dispositivos electronicos para el desarrollo de diferentes</p>
+	<p>proyectos y prototipos. si tienes dudas acerca de como usar el componente </p>
+	<p>No te preocupes que nosotros te asesoramos sin un costo adicional , te orientamos a base  a los requerimientos 
+		requeridos </p></center>
+	</font>
+	
+	<div class="repertorio">
+		<div class="card">
+			<h2 align="center">Arduino</h2>
+			<div class="contenido">
+				<div class="sup">
+					<img src="arduino.png" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Arduino Uno </p>
+					<p>Precio: 50Bs</p>
+					
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+				<div class="sup">
+					<img src="proto.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Protboard </p>
+					<p>Precio:25Bs</p>
+					
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<span><h2>Arduino</h2></span>
+			<div class="contenido">
+				<div class="sup">
+					<img src="mega.png" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción: Arduino Mega</p>
+					<p>Precio:120Bs</p>
+					
+					<button onclick="item2()">Añadir al carrito</button>
+				</div>
+				<div class="sup">
+					<img src="cap.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Capacitadores</p>
+					<p>Precio:20Bs</p>
+					
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<span><h2>Arduino</h2></span>
+			<div class="contenido">
+				<div class="sup">
+					<img src="nano.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Arduino nano</p>
+					<p>Precio: 45Bs</p>
+					
+					<button onclick="item3()">Añadir al carrito</button>
+				</div>
+				<div class="sup">
+					<img src="buzzer.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Altavoz Buzzer </p>
+					<p>Precio: 50Bs</p>
+					
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+<div class="card">
+			<h2 align="center">Diodos Led</h2>
+			<div class="contenido">
+				<div class="sup">
+					<img src="diodos.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Paquete de diodos </p>
+					<p>Precio:40Bs</p>
+					
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+				<div class="sup">
+					<img src="diodozener.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Arduino Uno </p>
+					<p>Precio: 50Bs</p>
+					
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<h2 align="center">Resistencias</h2>
+			<div class="contenido">
+				<div class="sup">
+					<img src="resistencias.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Resistencias Paquete </p>
+					<p>Precio: 30Bs</p>
+		
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+				<div class="sup">
+					<img src="cj.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Cables Jumpers </p>
+					<p>Precio: 50Bs</p>
+				
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<h2 align="center">Diodo</h2>
+			<div class="contenido">
+				<div class="sup">
+					<img src="diodozener.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Diodos Rectificador </p>
+					<p>Precio: 30Bs</p>
+				
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+				<div class="sup">
+					<img src="multi.jpg" alt="">
+				</div>
+				<div class="inf">
+					<p>Descripción:Multimetro</p>
+					<p>Precio: 90Bs</p>
+				
+					<button onclick="item1()">Añadir al carrito</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="carrito">
+		<div class="car">
+			<form>
+		<p>Nombre: <input type="text" id="nom"></p>
+		<p>Apellido: <input type="text" id="ape"></p>
+		<p>Email: <input type="text" id="email"></p>
+		<p>Celular: <input type="text" id="cel"></p>
+		
+	</form>
+
+		</div>
+		<div class="contenedor">
+			<h2 align="center">Productos Adquiridos</h2>
+			<div id="supercarrito">
+				<div id="datoscarrito">
+				
+				</div>
+				<div id="compras">
+					
+				</div>
+				<div id="totalcarrito">
+					
+				</div>
+
+			</div>
+
+			
+		</div>
+
+	</div>
+
+	<div id="superboton">
+		<button onclick="finish()">FINALIZAR COMPRA</button>
+		
+
+	</div>
+
+	<script>
+		var total=0;
+		var i1=0;
+		var i2=0;
+		var i3=0;
+		function ope() {
+			document.getElementById("compras").innerHTML=""
+			if(i1>0)
+			{
+				document.getElementById("compras").innerHTML+="<p>Componentes electronicos</p><p>Cantidad: "+i1+"</p>"
+			}
+			if(i2>0)
+			{
+				document.getElementById("compras").innerHTML+="<p>Componentes electronicos</p><p>Cantidad: "+i2+"</p>"
+			}
+			if(i3>0)
+			{
+				document.getElementById("compras").innerHTML+="<p>Componentes electronicos</p><p>Cantidad: "+i3+"</p>"
+			}
+		}
+		function item1() {
+			total+=50;
+			document.getElementById("totalcarrito").innerHTML=total;
+			document.getElementById("totalcarrito").innerHTML+="Bs.";
+			i1+=1;
+			ope();
+		}
+		function item2() {
+			total+=30;
+			document.getElementById("totalcarrito").innerHTML=total;
+			document.getElementById("totalcarrito").innerHTML+="Bs.";
+			i2+=1;
+			ope();
+		}
+		function item3() {
+			total+=80;
+			document.getElementById("totalcarrito").innerHTML=total;
+			document.getElementById("totalcarrito").innerHTML+="Bs.";
+			i3+=1;
+			ope();
+		}
+		function finish() {
+			document.getElementById("datoscarrito").innerHTML=""
+			document.getElementById("datoscarrito").innerHTML+="<h2 align='center'>Factura</h2>"
+			document.getElementById("datoscarrito").innerHTML+="<p>Nombre del comprador: </p>"
+			document.getElementById("datoscarrito").innerHTML+="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+(document.getElementById("nom").value)
+			document.getElementById("datoscarrito").innerHTML+="<br>"
+			document.getElementById("datoscarrito").innerHTML+="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+(document.getElementById("ape").value)
+			document.getElementById("datoscarrito").innerHTML+="<br>"
+			document.getElementById("datoscarrito").innerHTML+="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+(document.getElementById("email").value)
+			document.getElementById("datoscarrito").innerHTML+="<br>"
+			document.getElementById("datoscarrito").innerHTML+="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+(document.getElementById("cel").value)
+			document.getElementById("datoscarrito").innerHTML+="<br>"
+			document.getElementById("datoscarrito").innerHTML+="<br>"
+			document.getElementById("datoscarrito").innerHTML+="Total de compras"
+		}
+
+	</script>
+<footer>
+ <font color="black" FACE="impact"><center><h3> © 2020 Elaborado por:Katherine Quispe Quispe </h3></center></font>
+</footer>
+</body>
+</html>
